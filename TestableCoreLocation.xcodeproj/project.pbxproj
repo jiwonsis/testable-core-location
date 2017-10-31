@@ -14,6 +14,10 @@
 		347BBD9B1FA89E2C000BD16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BBD991FA89E2C000BD16B /* LaunchScreen.storyboard */; };
 		347BBDA61FA89E2D000BD16B /* TestableCoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBDA51FA89E2D000BD16B /* TestableCoreLocationTests.swift */; };
 		347BBDB11FA89E2D000BD16B /* TestableCoreLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBDB01FA89E2D000BD16B /* TestableCoreLocationUITests.swift */; };
+		347BBDD31FA89F16000BD16B /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDC81FA89F01000BD16B /* SwinjectStoryboard.framework */; };
+		347BBDD41FA89F16000BD16B /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDC81FA89F01000BD16B /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		347BBDF01FA89F3D000BD16B /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; };
+		347BBDF11FA89F3D000BD16B /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,127 @@
 			remoteGlobalIDString = 347BBD8C1FA89E2C000BD16B;
 			remoteInfo = TestableCoreLocation;
 		};
+		347BBDC71FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904061CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		347BBDC91FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985904101CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOSTests";
+		};
+		347BBDCB1FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562781CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSX";
+		};
+		347BBDCD1FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562811CDB173500DECDC0;
+			remoteInfo = "SwinjectStoryboard-OSXTests";
+		};
+		347BBDCF1FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D562941CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOS";
+		};
+		347BBDD11FA89F01000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98D5629D1CDB19AB00DECDC0;
+			remoteInfo = "SwinjectStoryboard-tvOSTests";
+		};
+		347BBDD51FA89F16000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 985904051CDB0AA700275E4A;
+			remoteInfo = "SwinjectStoryboard-iOS";
+		};
+		347BBDE21FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE811B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		347BBDE41FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE8B1B5FC9DF00294975;
+			remoteInfo = "Swinject-iOSTests";
+		};
+		347BBDE61FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899BC1B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSX";
+		};
+		347BBDE81FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899C51B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSXTests";
+		};
+		347BBDEA1FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985010C61BBE76D400A2CCFC;
+			remoteInfo = "Swinject-watchOS";
+		};
+		347BBDEC1FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C7F1BBFC7A50005C6D3;
+			remoteInfo = "Swinject-tvOS";
+		};
+		347BBDEE1FA89F29000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C881BBFC7A60005C6D3;
+			remoteInfo = "Swinject-tvOSTests";
+		};
+		347BBDF21FA89F3D000BD16B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 981ABE801B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		347BBDD71FA89F16000BD16B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				347BBDD41FA89F16000BD16B /* SwinjectStoryboard.framework in Embed Frameworks */,
+				347BBDF11FA89F3D000BD16B /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		347BBD8D1FA89E2C000BD16B /* TestableCoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableCoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +171,8 @@
 		347BBDAC1FA89E2D000BD16B /* TestableCoreLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableCoreLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BBDB01FA89E2D000BD16B /* TestableCoreLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableCoreLocationUITests.swift; sourceTree = "<group>"; };
 		347BBDB21FA89E2D000BD16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
+		347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347BBDD31FA89F16000BD16B /* SwinjectStoryboard.framework in Frameworks */,
+				347BBDF01FA89F3D000BD16B /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +209,8 @@
 				347BBDA41FA89E2C000BD16B /* TestableCoreLocationTests */,
 				347BBDAF1FA89E2D000BD16B /* TestableCoreLocationUITests */,
 				347BBD8E1FA89E2C000BD16B /* Products */,
+				347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */,
+				347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +255,33 @@
 			path = TestableCoreLocationUITests;
 			sourceTree = "<group>";
 		};
+		347BBDBF1FA89F01000BD16B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				347BBDC81FA89F01000BD16B /* SwinjectStoryboard.framework */,
+				347BBDCA1FA89F01000BD16B /* SwinjectStoryboardTests.xctest */,
+				347BBDCC1FA89F01000BD16B /* SwinjectStoryboard.framework */,
+				347BBDCE1FA89F01000BD16B /* SwinjectStoryboardTests.xctest */,
+				347BBDD01FA89F01000BD16B /* SwinjectStoryboard.framework */,
+				347BBDD21FA89F01000BD16B /* SwinjectStoryboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		347BBDD91FA89F29000BD16B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				347BBDE31FA89F29000BD16B /* Swinject.framework */,
+				347BBDE51FA89F29000BD16B /* SwinjectTests.xctest */,
+				347BBDE71FA89F29000BD16B /* Swinject.framework */,
+				347BBDE91FA89F29000BD16B /* SwinjectTests.xctest */,
+				347BBDEB1FA89F29000BD16B /* Swinject.framework */,
+				347BBDED1FA89F29000BD16B /* Swinject.framework */,
+				347BBDEF1FA89F29000BD16B /* SwinjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +292,13 @@
 				347BBD891FA89E2C000BD16B /* Sources */,
 				347BBD8A1FA89E2C000BD16B /* Frameworks */,
 				347BBD8B1FA89E2C000BD16B /* Resources */,
+				347BBDD71FA89F16000BD16B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				347BBDD61FA89F16000BD16B /* PBXTargetDependency */,
+				347BBDF31FA89F3D000BD16B /* PBXTargetDependency */,
 			);
 			name = TestableCoreLocation;
 			productName = TestableCoreLocation;
@@ -218,6 +378,16 @@
 			mainGroup = 347BBD841FA89E2C000BD16B;
 			productRefGroup = 347BBD8E1FA89E2C000BD16B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 347BBDD91FA89F29000BD16B /* Products */;
+					ProjectRef = 347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */;
+				},
+				{
+					ProductGroup = 347BBDBF1FA89F01000BD16B /* Products */;
+					ProjectRef = 347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				347BBD8C1FA89E2C000BD16B /* TestableCoreLocation */,
@@ -226,6 +396,100 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		347BBDC81FA89F01000BD16B /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = 347BBDC71FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDCA1FA89F01000BD16B /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = 347BBDC91FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDCC1FA89F01000BD16B /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = 347BBDCB1FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDCE1FA89F01000BD16B /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = 347BBDCD1FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDD01FA89F01000BD16B /* SwinjectStoryboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwinjectStoryboard.framework;
+			remoteRef = 347BBDCF1FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDD21FA89F01000BD16B /* SwinjectStoryboardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectStoryboardTests.xctest;
+			remoteRef = 347BBDD11FA89F01000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDE31FA89F29000BD16B /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 347BBDE21FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDE51FA89F29000BD16B /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 347BBDE41FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDE71FA89F29000BD16B /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 347BBDE61FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDE91FA89F29000BD16B /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 347BBDE81FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDEB1FA89F29000BD16B /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 347BBDEA1FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDED1FA89F29000BD16B /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 347BBDEC1FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		347BBDEF1FA89F29000BD16B /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 347BBDEE1FA89F29000BD16B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		347BBD8B1FA89E2C000BD16B /* Resources */ = {
@@ -292,6 +556,16 @@
 			isa = PBXTargetDependency;
 			target = 347BBD8C1FA89E2C000BD16B /* TestableCoreLocation */;
 			targetProxy = 347BBDAD1FA89E2D000BD16B /* PBXContainerItemProxy */;
+		};
+		347BBDD61FA89F16000BD16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwinjectStoryboard-iOS";
+			targetProxy = 347BBDD51FA89F16000BD16B /* PBXContainerItemProxy */;
+		};
+		347BBDF31FA89F3D000BD16B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-iOS";
+			targetProxy = 347BBDF21FA89F3D000BD16B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +699,7 @@
 		347BBDB61FA89E2D000BD16B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FNDVP9SLK2;
@@ -440,6 +715,7 @@
 		347BBDB71FA89E2D000BD16B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FNDVP9SLK2;
