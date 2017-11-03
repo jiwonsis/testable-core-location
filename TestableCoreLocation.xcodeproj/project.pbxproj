@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3407B5171FAC61D50094E14E /* XSPDLocationAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5161FAC61D50094E14E /* XSPDLocationAuthorization.swift */; };
+		3407B5241FAC8B740094E14E /* XSPDLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5231FAC8B740094E14E /* XSPDLocationProvider.swift */; };
 		347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD901FA89E2C000BD16B /* AppDelegate.swift */; };
 		347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD921FA89E2C000BD16B /* ViewController.swift */; };
 		347BBD961FA89E2C000BD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BBD941FA89E2C000BD16B /* Main.storyboard */; };
@@ -161,6 +162,7 @@
 
 /* Begin PBXFileReference section */
 		3407B5161FAC61D50094E14E /* XSPDLocationAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorization.swift; sourceTree = "<group>"; };
+		3407B5231FAC8B740094E14E /* XSPDLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationProvider.swift; sourceTree = "<group>"; };
 		347BBD8D1FA89E2C000BD16B /* TestableCoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableCoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BBD901FA89E2C000BD16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347BBD921FA89E2C000BD16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		34A339181FA991860033357D /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				3407B5231FAC8B740094E14E /* XSPDLocationProvider.swift */,
 				3407B5161FAC61D50094E14E /* XSPDLocationAuthorization.swift */,
 				3489A2471FA998F50042E926 /* XSPDLocationManager.swift */,
 			);
@@ -540,6 +543,7 @@
 				347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */,
 				347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */,
 				3489A2481FA998F50042E926 /* XSPDLocationManager.swift in Sources */,
+				3407B5241FAC8B740094E14E /* XSPDLocationProvider.swift in Sources */,
 				3407B5171FAC61D50094E14E /* XSPDLocationAuthorization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
