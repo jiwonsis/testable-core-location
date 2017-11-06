@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import Swinject
 
 
 protocol XSPDLocationSpeedCheckerDelegate: class {
@@ -63,5 +64,14 @@ extension XSPDDefaultLocationSpeedChecker: XSPDLocationSpeedChecker {
 extension XSPDDefaultLocationSpeedChecker: XSPDLocationConsumer {
     func consumeLocation(_ location: CLLocation) {
         lastLocation = location
+    }
+}
+
+class XSPDLocationSpeedCheckerAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(XSPDLocationSpeedChecker.self, factory: { r in
+            let locationProvier = r.resolve(XSPDLocationProvider.self)!
+            return XSPDDefaultLocationSpeedChecker.init(locationProvier: locationProvier)
+        }).inObjectScope(.weak)
     }
 }

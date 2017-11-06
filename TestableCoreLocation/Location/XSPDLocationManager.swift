@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import Swinject
 
 protocol XSPDLocationManagerDelegate: class {
     
@@ -40,10 +41,10 @@ class XSPDLocationManagerProxy: NSObject {
     weak var delegate: XSPDLocationManagerDelegate?
     weak var authorizationDelegate: XSPDLocationManagerAuthorizationDelegate?
     
-    let locationManager: XSPDLocationManager
+    let locationManager: CLLocationManager
     
     // D.I.P
-    init(locationManager: XSPDLocationManager) {
+    init(locationManager: CLLocationManager) {
         self.locationManager = locationManager
     }
 }
@@ -76,4 +77,13 @@ extension XSPDLocationManagerProxy: CLLocationManagerDelegate {
         authorizationDelegate?.locationManager(self, didChangeAuthorization: status)
     }
     
+}
+
+class XSPDLocationManagerAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(XSPDLocationManager.self, factory: { (r) in
+            let locationManager = CLLocationManager()
+            return XSPDLocationManagerProxy(locationManager: locationManager)
+        }).inObjectScope(.weak)
+    }
 }

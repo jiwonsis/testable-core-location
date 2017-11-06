@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import Swinject
 
 protocol XSPDLocationConsumer: class {
     func consumeLocation(_ location: CLLocation)
@@ -65,6 +66,19 @@ extension XSPDDefaultLocationProvider: XSPDLocationManagerDelegate {
             consumer.consumeLocation(location)
         }
     }
-    
 }
+
+class XSPDLocationProviderAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(XSPDLocationProvider.self, factory: { r in
+            
+            let locationManger = r.resolve(XSPDLocationManager.self)!
+            let locationAuthorization = r.resolve(XSPDLocationAuthorization.self)!
+            
+            return XSPDDefaultLocationProvider.init(locationManger: locationManger, locationAuthorization: locationAuthorization)
+            
+        }).inObjectScope(.weak)
+    }
+}
+
 

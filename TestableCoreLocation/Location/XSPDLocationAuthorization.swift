@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import Swinject
 
 extension NSNotification.Name {
     static let XSPDLocationAuthorized =
@@ -56,4 +57,15 @@ extension XSPDDefaultLocationAuthorization: XSPDLocationManagerAuthorizationDele
         default: break
         }
     }
+}
+
+class XSPDLocationAuthorizationAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(XSPDLocationAuthorization.self, factory: { r in
+            let locationManager = r.resolve(XSPDLocationManager.self)!
+            return XSPDDefaultLocationAuthorization.init(locationManger: locationManager)
+        }).inObjectScope(.weak)
+    }
+    
 }
