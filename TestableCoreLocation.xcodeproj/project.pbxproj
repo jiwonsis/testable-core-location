@@ -12,6 +12,7 @@
 		3407B5261FACA1520094E14E /* XSPDLocationSpeedProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5251FACA1520094E14E /* XSPDLocationSpeedProvider.swift */; };
 		3407B5281FACADF30094E14E /* XSPDLocationSpeedChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5271FACADF30094E14E /* XSPDLocationSpeedChecker.swift */; };
 		3407B53E1FB033140094E14E /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B53D1FB033140094E14E /* MainAssembler.swift */; };
+		3407B54C1FB042AD0094E14E /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B54B1FB042AD0094E14E /* BorderedButton.swift */; };
 		347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD901FA89E2C000BD16B /* AppDelegate.swift */; };
 		347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD921FA89E2C000BD16B /* ViewController.swift */; };
 		347BBD961FA89E2C000BD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BBD941FA89E2C000BD16B /* Main.storyboard */; };
@@ -169,6 +170,7 @@
 		3407B5251FACA1520094E14E /* XSPDLocationSpeedProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationSpeedProvider.swift; sourceTree = "<group>"; };
 		3407B5271FACADF30094E14E /* XSPDLocationSpeedChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationSpeedChecker.swift; sourceTree = "<group>"; };
 		3407B53D1FB033140094E14E /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		3407B54B1FB042AD0094E14E /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		347BBD8D1FA89E2C000BD16B /* TestableCoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableCoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BBD901FA89E2C000BD16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347BBD921FA89E2C000BD16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3407B54A1FB0427F0094E14E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3407B54B1FB042AD0094E14E /* BorderedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		347BBD841FA89E2C000BD16B = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		347BBD8F1FA89E2C000BD16B /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				3407B54A1FB0427F0094E14E /* Views */,
 				34A339181FA991860033357D /* Location */,
 				347BBD901FA89E2C000BD16B /* AppDelegate.swift */,
 				347BBD921FA89E2C000BD16B /* ViewController.swift */,
@@ -551,6 +562,7 @@
 			files = (
 				347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */,
 				3407B53E1FB033140094E14E /* MainAssembler.swift in Sources */,
+				3407B54C1FB042AD0094E14E /* BorderedButton.swift in Sources */,
 				3407B5281FACADF30094E14E /* XSPDLocationSpeedChecker.swift in Sources */,
 				347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */,
 				3407B5261FACA1520094E14E /* XSPDLocationSpeedProvider.swift in Sources */,
