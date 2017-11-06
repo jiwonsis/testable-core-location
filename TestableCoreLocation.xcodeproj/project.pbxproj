@@ -11,6 +11,7 @@
 		3407B5241FAC8B740094E14E /* XSPDLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5231FAC8B740094E14E /* XSPDLocationProvider.swift */; };
 		3407B5261FACA1520094E14E /* XSPDLocationSpeedProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5251FACA1520094E14E /* XSPDLocationSpeedProvider.swift */; };
 		3407B5281FACADF30094E14E /* XSPDLocationSpeedChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B5271FACADF30094E14E /* XSPDLocationSpeedChecker.swift */; };
+		3407B53E1FB033140094E14E /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B53D1FB033140094E14E /* MainAssembler.swift */; };
 		347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD901FA89E2C000BD16B /* AppDelegate.swift */; };
 		347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD921FA89E2C000BD16B /* ViewController.swift */; };
 		347BBD961FA89E2C000BD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BBD941FA89E2C000BD16B /* Main.storyboard */; };
@@ -167,6 +168,7 @@
 		3407B5231FAC8B740094E14E /* XSPDLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationProvider.swift; sourceTree = "<group>"; };
 		3407B5251FACA1520094E14E /* XSPDLocationSpeedProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationSpeedProvider.swift; sourceTree = "<group>"; };
 		3407B5271FACADF30094E14E /* XSPDLocationSpeedChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationSpeedChecker.swift; sourceTree = "<group>"; };
+		3407B53D1FB033140094E14E /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		347BBD8D1FA89E2C000BD16B /* TestableCoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableCoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BBD901FA89E2C000BD16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347BBD921FA89E2C000BD16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				34A339181FA991860033357D /* Location */,
 				347BBD901FA89E2C000BD16B /* AppDelegate.swift */,
 				347BBD921FA89E2C000BD16B /* ViewController.swift */,
+				3407B53D1FB033140094E14E /* MainAssembler.swift */,
 				347BBD941FA89E2C000BD16B /* Main.storyboard */,
 				347BBD971FA89E2C000BD16B /* Assets.xcassets */,
 				347BBD991FA89E2C000BD16B /* LaunchScreen.storyboard */,
@@ -547,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */,
+				3407B53E1FB033140094E14E /* MainAssembler.swift in Sources */,
 				3407B5281FACADF30094E14E /* XSPDLocationSpeedChecker.swift in Sources */,
 				347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */,
 				3407B5261FACA1520094E14E /* XSPDLocationSpeedProvider.swift in Sources */,
