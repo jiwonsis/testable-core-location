@@ -10,17 +10,17 @@ import Foundation
 import CoreLocation
 import Swinject
 
-protocol XSPDSpeedProviderDelegate: class {
+protocol XSPDLocationSpeedProviderDelegate: class {
     
     func didUpdate(speed: CLLocationSpeed)
 }
 
 protocol XSPDLocationSpeedProvider: class {
-    var delegate: XSPDSpeedProviderDelegate? { get set }
+    var delegate: XSPDLocationSpeedProviderDelegate? { get set }
 }
 
 class XSPDDefaultLocationSpeedProvider {
-    weak var delegate: XSPDSpeedProviderDelegate?
+    weak var delegate: XSPDLocationSpeedProviderDelegate?
     let locationProvider: XSPDLocationProvider
     
     init(locationProvider: XSPDLocationProvider) {

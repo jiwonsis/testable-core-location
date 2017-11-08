@@ -35,6 +35,9 @@
                                 <state key="normal" title="Max Speed">
                                     <color key="titleColor" red="0.0039215686269999999" green="0.098039215690000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdn-WI-F5G"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-ss-tK0" userLabel="view">
                                 <rect key="frame" x="0.0" y="597" width="375" height="70"/>
@@ -57,6 +60,9 @@
                                         <state key="normal" title="Max Speed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapMaxSpeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zp4-UI-xvY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,9 +93,9 @@
                     </view>
                     <connections>
                         <outlet property="speedViewHeightConstraint" destination="RmN-n4-xJX" id="N7U-LB-Kvn"/>
-                        <outletCollection property="speedLables" destination="MWF-vO-KvT" collectionClass="NSMutableArray" id="Wjs-pf-OvF"/>
-                        <outletCollection property="speedLables" destination="MWF-vO-KvT" collectionClass="NSMutableArray" id="HL1-Pi-kbY"/>
                         <outletCollection property="colorableViews" destination="e6Q-ss-tK0" collectionClass="NSMutableArray" id="IeY-NN-f3O"/>
+                        <outletCollection property="speedLables" destination="MWF-vO-KvT" collectionClass="NSMutableArray" id="Mzq-KX-pRV"/>
+                        <outletCollection property="speedLables" destination="nyT-hn-yCo" collectionClass="NSMutableArray" id="no1-eg-JcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
