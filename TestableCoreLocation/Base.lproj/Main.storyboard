@@ -49,7 +49,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2y-yV-scK">
-                                        <rect key="frame" x="24" y="38" width="44.5" height="24"/>
+                                        <rect key="frame" x="16" y="38" width="44.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="p2y-yV-scK" firstAttribute="leading" secondItem="e6Q-ss-tK0" secondAttribute="leading" constant="24" id="8gh-Rb-ab1"/>
+                                    <constraint firstItem="p2y-yV-scK" firstAttribute="leading" secondItem="e6Q-ss-tK0" secondAttribute="leading" constant="16" id="8gh-Rb-ab1"/>
                                     <constraint firstAttribute="bottom" secondItem="p2y-yV-scK" secondAttribute="bottom" constant="8" id="9Tx-2v-AGR"/>
                                     <constraint firstAttribute="bottom" secondItem="kZT-EA-JGI" secondAttribute="bottom" constant="8" id="A1S-94-Bfw"/>
                                     <constraint firstAttribute="bottom" secondItem="MWF-vO-KvT" secondAttribute="bottom" constant="16" id="GRD-Eb-dDy"/>

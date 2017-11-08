@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import Swinject
+import SwinjectStoryboard
 
 private let maxDisplayableSpeed: CLLocationSpeed = 40  // 40m/s , 144km/h
 
@@ -110,7 +112,6 @@ extension ViewController: XSPDLocationSpeedCheckerDelegate {
     }
 }
 
-
 extension UIColor {
     static let displayColorRed = UIColor(red: 255/255, green: 82/255, blue: 0/255, alpha: 1)
     static let displayColorBlue = UIColor(red: 0/255, green: 0/255, blue: 128/255, alpha: 1)
@@ -122,9 +123,17 @@ extension Double {
     }
 }
 
-
 extension CLLocationSpeed {
     var asKMH: Double {
         return self * 3.6 // 1m/s = 3.6 km/h
+    }
+}
+
+class ViewControllerAssembly: Assembly {
+    func assemble(container: Container) {
+        container.storyboardInitCompleted(ViewController.self) { (r, c) in
+            c.speedProvider = r.resolve(XSPDLocationSpeedProvider.self)!
+            c.speedChecker = r.resolve(XSPDLocationSpeedChecker.self)!
+        }
     }
 }
