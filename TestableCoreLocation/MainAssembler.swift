@@ -26,4 +26,5 @@ class MainAssembler {
         
         assembler.apply(assembly: ViewControllerAssembly())
     }
+    
 }
