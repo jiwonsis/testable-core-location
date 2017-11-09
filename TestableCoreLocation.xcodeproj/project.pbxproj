@@ -25,6 +25,7 @@
 		347BBDF01FA89F3D000BD16B /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; };
 		347BBDF11FA89F3D000BD16B /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3489A2481FA998F50042E926 /* XSPDLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489A2471FA998F50042E926 /* XSPDLocationManager.swift */; };
+		34D672AE1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */; };
 		34F0561B1FB372A600BA6F13 /* XSPDLocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0561A1FB372A600BA6F13 /* XSPDLocationManagerMock.swift */; };
 		34F0561D1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0561C1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift */; };
 		34F0561F1FB3775000BA6F13 /* XSPDLocationAuthorizationDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0561E1FB3775000BA6F13 /* XSPDLocationAuthorizationDelegateMock.swift */; };
@@ -194,6 +195,7 @@
 		347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 		3489A2471FA998F50042E926 /* XSPDLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationManager.swift; sourceTree = "<group>"; };
+		34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorizationTests.swift; sourceTree = "<group>"; };
 		34F0561A1FB372A600BA6F13 /* XSPDLocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationManagerMock.swift; sourceTree = "<group>"; };
 		34F0561C1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorizationMock.swift; sourceTree = "<group>"; };
 		34F0561E1FB3775000BA6F13 /* XSPDLocationAuthorizationDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorizationDelegateMock.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		347BBDA41FA89E2C000BD16B /* TestableCoreLocationTests */ = {
 			isa = PBXGroup;
 			children = (
+				34D672A11FB4288300072E3B /* Location */,
 				34F056191FB3725500BA6F13 /* Mocks */,
 				347BBDA51FA89E2D000BD16B /* TestableCoreLocationTests.swift */,
 				347BBDA71FA89E2D000BD16B /* Info.plist */,
@@ -330,6 +333,14 @@
 				3407B5271FACADF30094E14E /* XSPDLocationSpeedChecker.swift */,
 				3407B5161FAC61D50094E14E /* XSPDLocationAuthorization.swift */,
 				3489A2471FA998F50042E926 /* XSPDLocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		34D672A11FB4288300072E3B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -610,6 +621,7 @@
 				34F056251FB3796100BA6F13 /* XSPDLocationSpeedCheckerMock.swift in Sources */,
 				347BBDA61FA89E2D000BD16B /* TestableCoreLocationTests.swift in Sources */,
 				34F056271FB379FC00BA6F13 /* XSPDLocationSpeedProviderDelegateMock.swift in Sources */,
+				34D672AE1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift in Sources */,
 				34F056231FB378A800BA6F13 /* XSPDLocationConsumerMock.swift in Sources */,
 				34F0561B1FB372A600BA6F13 /* XSPDLocationManagerMock.swift in Sources */,
 				34F056211FB3781A00BA6F13 /* XSPDLocationProviderMock.swift in Sources */,
