@@ -29,6 +29,8 @@ class XSPDDefaultLocationProvider {
         self.locationAuthorization = locationAuthorization
         
         locationManger.delegate = self
+        
+        setupNotifications()
     }
     
     deinit {
