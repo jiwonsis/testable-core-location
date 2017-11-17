@@ -9,7 +9,7 @@
 import Foundation
 @testable import TestableCoreLocation
 
-class XSPDLocationSpeedCheckerMock: XSPDLocationSpeedCheckerDelegate {
+class XSPDLocationSpeedCheckerDelegateMock: XSPDLocationSpeedCheckerDelegate {
     
     var didChangeExceedingMaxSpeed = false
     

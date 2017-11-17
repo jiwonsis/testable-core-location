@@ -33,11 +33,17 @@ class XSPDDefaultLocationSpeedChecker {
     }
     var isExceedingMaximumSpeed = false {
         didSet {
-            delegate?.exceedingMaximumSpeedChanged(for: self)
+            if oldValue != isExceedingMaximumSpeed {
+                delegate?.exceedingMaximumSpeedChanged(for: self)
+            }
         }
     }
     
-    var lastLocation: CLLocation?
+    var lastLocation: CLLocation? {
+        didSet {
+            checkIfSpeedExceeded()
+        }
+    }
     let locationProvier: XSPDLocationProvider
     
     init(locationProvier: XSPDLocationProvider) {
