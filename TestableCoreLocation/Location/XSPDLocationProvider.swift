@@ -44,6 +44,7 @@ private extension XSPDDefaultLocationProvider {
         NotificationCenter.default.addObserver(forName: .XSPDLocationAuthorized,
                                                object: locationAuthorization,
                                                queue: .main) { [weak self](_) in
+                                                
             self?.locationManager.startUpdatingLocation()
         }
     }

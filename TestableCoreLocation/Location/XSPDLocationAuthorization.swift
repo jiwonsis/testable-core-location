@@ -51,6 +51,7 @@ extension XSPDDefaultLocationAuthorization: XSPDLocationManagerAuthorizationDele
     func locationManager(_ manager: XSPDLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
+            
             NotificationCenter.default.post(name: .XSPDLocationAuthorized, object: self)
         case .denied, .restricted:
             delegate?.authorizationDenied(for: self)

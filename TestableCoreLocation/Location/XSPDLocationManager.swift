@@ -46,6 +46,10 @@ class XSPDLocationManagerProxy: NSObject {
     // D.I.P
     init(locationManager: CLLocationManager) {
         self.locationManager = locationManager
+        
+        super.init()
+        
+        locationManager.delegate = self
     }
 }
 
