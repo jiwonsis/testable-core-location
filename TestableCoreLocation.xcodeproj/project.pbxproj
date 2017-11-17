@@ -14,6 +14,7 @@
 		3407B53E1FB033140094E14E /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B53D1FB033140094E14E /* MainAssembler.swift */; };
 		3407B54C1FB042AD0094E14E /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407B54B1FB042AD0094E14E /* BorderedButton.swift */; };
 		3444F9A01FB7DAE60081777D /* XSPDLocationProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3444F99F1FB7DAE60081777D /* XSPDLocationProviderTests.swift */; };
+		34605D961FBE87D3005342CC /* XSPDLocationSpeedProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34605D951FBE87D3005342CC /* XSPDLocationSpeedProviderTests.swift */; };
 		347BBD911FA89E2C000BD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD901FA89E2C000BD16B /* AppDelegate.swift */; };
 		347BBD931FA89E2C000BD16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BBD921FA89E2C000BD16B /* ViewController.swift */; };
 		347BBD961FA89E2C000BD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347BBD941FA89E2C000BD16B /* Main.storyboard */; };
@@ -181,6 +182,7 @@
 		3407B53D1FB033140094E14E /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		3407B54B1FB042AD0094E14E /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		3444F99F1FB7DAE60081777D /* XSPDLocationProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationProviderTests.swift; sourceTree = "<group>"; };
+		34605D951FBE87D3005342CC /* XSPDLocationSpeedProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationSpeedProviderTests.swift; sourceTree = "<group>"; };
 		347BBD8D1FA89E2C000BD16B /* TestableCoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableCoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347BBD901FA89E2C000BD16B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347BBD921FA89E2C000BD16B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 			children = (
 				34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */,
 				3444F99F1FB7DAE60081777D /* XSPDLocationProviderTests.swift */,
+				34605D951FBE87D3005342CC /* XSPDLocationSpeedProviderTests.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				34F056251FB3796100BA6F13 /* XSPDLocationSpeedCheckerMock.swift in Sources */,
 				347BBDA61FA89E2D000BD16B /* TestableCoreLocationTests.swift in Sources */,
 				34F056271FB379FC00BA6F13 /* XSPDLocationSpeedProviderDelegateMock.swift in Sources */,
+				34605D961FBE87D3005342CC /* XSPDLocationSpeedProviderTests.swift in Sources */,
 				34D672AE1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift in Sources */,
 				3444F9A01FB7DAE60081777D /* XSPDLocationProviderTests.swift in Sources */,
 				34F056231FB378A800BA6F13 /* XSPDLocationConsumerMock.swift in Sources */,
