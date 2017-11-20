@@ -29,6 +29,7 @@ class BorderedButton: UIButton {
     }
     
     override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         commonInit()
     }
 

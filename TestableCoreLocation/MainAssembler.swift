@@ -25,6 +25,10 @@ class MainAssembler {
         assembler.apply(assembly: XSPDLocationSpeedProviderAssembly())
         
         assembler.apply(assembly: ViewControllerAssembly())
+        
+        if ProcessInfo.processInfo.arguments.contains("UITests") {
+            assembler.apply(assembly: XSPDLocationManagerUITestMockAssembly())
+        }
     }
     
 }

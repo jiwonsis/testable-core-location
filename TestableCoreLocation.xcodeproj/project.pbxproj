@@ -28,6 +28,7 @@
 		347BBDF01FA89F3D000BD16B /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; };
 		347BBDF11FA89F3D000BD16B /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 347BBDE31FA89F29000BD16B /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3489A2481FA998F50042E926 /* XSPDLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489A2471FA998F50042E926 /* XSPDLocationManager.swift */; };
+		34C1C7EF1FC2A4E30007E4D2 /* XSPDLocationManagerUITestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1C7EE1FC2A4E30007E4D2 /* XSPDLocationManagerUITestMock.swift */; };
 		34D672AE1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */; };
 		34F0561B1FB372A600BA6F13 /* XSPDLocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0561A1FB372A600BA6F13 /* XSPDLocationManagerMock.swift */; };
 		34F0561D1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0561C1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift */; };
@@ -201,6 +202,7 @@
 		347BBDBE1FA89F01000BD16B /* SwinjectStoryboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwinjectStoryboard.xcodeproj; path = Carthage/Checkouts/SwinjectStoryboard/SwinjectStoryboard.xcodeproj; sourceTree = "<group>"; };
 		347BBDD81FA89F29000BD16B /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 		3489A2471FA998F50042E926 /* XSPDLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationManager.swift; sourceTree = "<group>"; };
+		34C1C7EE1FC2A4E30007E4D2 /* XSPDLocationManagerUITestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationManagerUITestMock.swift; sourceTree = "<group>"; };
 		34D672AD1FB428AA00072E3B /* XSPDLocationAuthorizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorizationTests.swift; sourceTree = "<group>"; };
 		34F0561A1FB372A600BA6F13 /* XSPDLocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationManagerMock.swift; sourceTree = "<group>"; };
 		34F0561C1FB3764200BA6F13 /* XSPDLocationAuthorizationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSPDLocationAuthorizationMock.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		347BBD8F1FA89E2C000BD16B /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				34C1C7E21FC2A4A00007E4D2 /* UITests */,
 				3407B54A1FB0427F0094E14E /* Views */,
 				34A339181FA991860033357D /* Location */,
 				347BBD901FA89E2C000BD16B /* AppDelegate.swift */,
@@ -341,6 +344,14 @@
 				3489A2471FA998F50042E926 /* XSPDLocationManager.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		34C1C7E21FC2A4A00007E4D2 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				34C1C7EE1FC2A4E30007E4D2 /* XSPDLocationManagerUITestMock.swift */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		34D672A11FB4288300072E3B /* Location */ = {
@@ -618,6 +629,7 @@
 				3489A2481FA998F50042E926 /* XSPDLocationManager.swift in Sources */,
 				3407B5241FAC8B740094E14E /* XSPDLocationProvider.swift in Sources */,
 				3407B5171FAC61D50094E14E /* XSPDLocationAuthorization.swift in Sources */,
+				34C1C7EF1FC2A4E30007E4D2 /* XSPDLocationManagerUITestMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
