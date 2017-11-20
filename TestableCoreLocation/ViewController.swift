@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         alertController.addTextField { [weak self] (textField) in
             textField.keyboardType = .numberPad
             textField.placeholder = "최대 속도 값을 입력해주세요"
+            textField.accessibilityIdentifier = "maxSpeedInputLabel"
             if let maxSpeed = self?.speedChecker.maximumSpeed {
                 textField.text = String(format: "%.0f", maxSpeed.asKMH)
             }

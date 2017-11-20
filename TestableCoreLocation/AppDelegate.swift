@@ -49,6 +49,11 @@ extension AppDelegate: UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         
         setupWindow()
+        
+        if ProcessInfo.processInfo.arguments.contains("UITests") {
+            UIApplication.shared.keyWindow?.layer.speed = 100
+        }
+        
         locationAuthorization.checkAuthorization()
         
         return true
@@ -57,7 +62,7 @@ extension AppDelegate: UIApplicationDelegate {
 
 extension AppDelegate: XSPDLocationAuthorizationDelegate {
     func authorizationDenied(for locationAuthorization: XSPDLocationAuthorization) {
-        let alertController = UIAlertController.init(title: "Perminsion Denied?", message: "This app needs acces your location to function", preferredStyle: .alert)
+        let alertController = UIAlertController.init(title: "권한 사용안함", message: "이앱은 위치서비스 권한이 필요한 앱입니다.", preferredStyle: .alert)
         
         let okAction = UIAlertAction.init(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
